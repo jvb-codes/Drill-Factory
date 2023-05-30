@@ -1,0 +1,70 @@
+/*WRAPPER*/
+
+.grid {
+  align-self: start;
+  margin-top: 1em;
+  box-shadow: 0 0 3px rgba(235, 205, 205, 0.7);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/*HEADER*/
+
+.header {
+  background-color: rgb(103, 101, 110);
+  padding: 0.5em;
+}
+
+.header p {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/*WORDS DISPLAY*/
+
+.word {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 1em;
+  margin: 1em 0 1em 0;
+}
+
+.word p {
+  background-color: #4b658a;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.word p:hover {
+  cursor: pointer;
+}
+
+.empty-notification {
+  background-color: transparent !important;
+}
+
+/*ERROR MESSAGE*/
+
+.error-message {
+  background-color: transparent !important;
+  color: rgb(189, 2, 2);
+}
+
+/*CONFIRMATION BUTTON*/
+
+.confirm-button {
+  align-self: start;
+  background-color: #2c3d55;
+  color: white;
+  border: none;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+
+.confirm-button:hover {
+  cursor: pointer;
+}

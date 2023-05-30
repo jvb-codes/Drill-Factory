@@ -1,0 +1,70 @@
+/*WRAPPER*/
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8em;
+}
+
+/*INPUT AND CONFIRMATION BTN*/
+.grid input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  height: 2.5em;
+  padding: 1em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  width: 90%;
+}
+
+.grid button {
+  background-color: #2c3d55;
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  padding: 0.7em;
+}
+
+.grid button:hover {
+  cursor: pointer;
+}
+
+/*ERROR MESSAGE*/
+
+.error-message {
+  align-self: flex-start;
+  font-size: 0.8em;
+  margin-left: 0.1em;
+  color: rgb(189, 2, 2);
+  font-weight: bold;
+}
+
+.error-message-visible {
+  visibility: visible;
+}
+
+.error-message-hidden {
+  visibility: hidden;
+}
+
+/*MEDIA QUERIES*/
+
+/* Smartphones */
+@media (max-width: 576px) {
+}
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 991px) {
+}
+
+/* Laptops and Desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Large Desktops */
+@media (min-width: 1200px) {
+}

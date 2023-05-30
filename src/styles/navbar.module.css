@@ -1,0 +1,33 @@
+/* WRAPPER */
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: rgb(132, 130, 143);
+  color: white;
+}
+
+/* HAMBURGER MENU */
+
+.menu-hidden {
+  visibility: hidden;
+}
+
+.menu-visible {
+  visibility: visible;
+}
+
+/*MEDIA QUERIES*/
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 991px) {
+}
+
+/* Laptops and Desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Large Desktops */
+@media (min-width: 1200px) {
+}
