@@ -7,7 +7,7 @@ import fetchExampleSentences from "./fetchExampleSentences";
 export default function WordsToReplace({
   selectedWords,
   selectedWordsErrorMsg,
-  setSelectedWordsErrorMsg
+  setSelectedWordsErrorMsg,
 }) {
   const { state, dispatch } = useContext(AppContext);
   const selectedWordElements = selectedWords.map((item) => (

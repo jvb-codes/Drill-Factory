@@ -1,5 +1,4 @@
 import { makeSentenceObj } from "./ExampleSentences";
-import {API_KEY} from "./config"
 
 export default async function fetchExampleSentences(
   userSentence,
@@ -17,14 +16,13 @@ export default async function fetchExampleSentences(
       return { wordsToReplaceStr };
     },
     numOfExamples: 3,
-    rules: `1. Replace only the words in the prompt. 2. Only use the same grammar tense and pattern as the sentence in th e prompt sentence. 3. Do not number your examples.`
+    rules: `1. Replace only the words in the prompt. 2. Only use the same grammar tense and pattern as the sentence in th e prompt sentence. 3. Do not number your examples.`,
   };
   const { wordsToReplaceStr } = promptData.formatWordsToReplace();
 
   const fetchData = {
-
     model: "text-davinci-003",
-    API_KEY: API_KEY,
+    API_KEY: process.env.REACT_APP_OPENAIAPI_KEY,
     URL: () =>
       `https://api.openai.com/v1/engines/${fetchData.model}/completions`,
     prompt: () =>
@@ -34,15 +32,15 @@ export default async function fetchExampleSentences(
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Bearer " + fetchData.API_KEY
+          Authorization: "Bearer " + fetchData.API_KEY,
         },
         body: JSON.stringify({
           prompt: fetchData.prompt(),
           max_tokens: 50,
-          n: 1
-        })
+          n: 1,
+        }),
       };
-    }
+    },
   };
 
   const response = await fetch(fetchData.URL(), fetchData.POST());
