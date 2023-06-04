@@ -22,6 +22,8 @@ export default function ExampleSentences() {
     setSelectedSentences(filteredExampleSentences);
   }, [state.exampleSentences]);
 
+  console.log(state.exampleSentences, selectedSentences);
+
   //Changes background of sentence if selected
   function handleBackgroundColor(id) {
     const updated = state.exampleSentences.map((item) => {
@@ -68,7 +70,7 @@ export default function ExampleSentences() {
       <label className={styles["sentences-container"]} for={item.id}>
         <p>{item.sentence}</p>
         <input
-          onClick={(e) => handleBackgroundColor(e, item.id)}
+          onClick={() => handleBackgroundColor(item.id)}
           type="checkbox"
           id={item.id}
         />
