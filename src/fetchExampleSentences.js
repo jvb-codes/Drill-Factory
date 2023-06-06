@@ -10,7 +10,7 @@ export default async function fetchExampleSentences(
     .map((item) => `"${item.word.trim()}"`)
     .join(", ");
 
-  const prompt = `Generate three example sentences that follow the grammar structure of "${userSentence}" and replace the words ${wordsToReplace} with different ones. Do not number the examples.`;
+  const prompt = `Generate three example sentences that follow the same sentence structure of "${userSentence}" and replace ${wordsToReplace} with different words.`;
 
   const response = await axios.post("http://localhost:5000/", {
     prompt,

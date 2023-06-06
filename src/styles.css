@@ -11,3 +11,22 @@
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
+
+.winWidth{
+  position: absolute;
+}
+
+/* Tablets */
+@media (min-width: 576px) and (max-width: 991px) {
+  .material-symbols-outlined{
+    font-variation-settings:  "opsz" 48;
+  }
+}
+
+/* Laptops and Desktops */
+@media (min-width: 992px) {
+   .material-symbols-outlined{
+    
+  }
+}
+
