@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/drill-factory/static/css/main.020a54b1.css",
-    "main.js": "/drill-factory/static/js/main.214dba3f.js",
+    "main.css": "/drill-factory/static/css/main.0aed6baa.css",
+    "main.js": "/drill-factory/static/js/main.69103fd6.js",
     "index.html": "/drill-factory/index.html",
-    "main.020a54b1.css.map": "/drill-factory/static/css/main.020a54b1.css.map",
-    "main.214dba3f.js.map": "/drill-factory/static/js/main.214dba3f.js.map"
+    "main.0aed6baa.css.map": "/drill-factory/static/css/main.0aed6baa.css.map",
+    "main.69103fd6.js.map": "/drill-factory/static/js/main.69103fd6.js.map"
   },
   "entrypoints": [
-    "static/css/main.020a54b1.css",
-    "static/js/main.214dba3f.js"
+    "static/css/main.0aed6baa.css",
+    "static/js/main.69103fd6.js"
   ]
 }
