@@ -1,5 +1,3 @@
-
-
 Error Msg in UserInput comp
 
 - Change the isFetched state name to "isInputOk, setIsInputOk".
@@ -71,3 +69,9 @@ Moving Reducer function to own file
 /_ Large Desktops _/
 @media (min-width: 1200px) {
 }
+
+//TODO - disable hover on headers in words to replace and word selection
+
+//TODO - contracted words in word selection should not be seperate.
+
+//TODO - add hover on hamburger menu.
