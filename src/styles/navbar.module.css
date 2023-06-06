@@ -3,9 +3,17 @@
 .grid {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  background: rgb(132, 130, 143);
+  align-items: center;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+  background: rgb(59, 58, 65);
   color: white;
+}
+
+/* TITLE */
+
+.grid :nth-child(1){
+  font-size: 2em;
+  font-weight: 600;
 }
 
 /* HAMBURGER MENU */
@@ -18,16 +26,24 @@
   visibility: visible;
 }
 
+.icon:hover{
+  cursor: pointer;
+}
+
 /*MEDIA QUERIES*/
 
 /* Tablets */
 @media (min-width: 576px) and (max-width: 991px) {
+  .grid {
+    font-size: 1.3em;
+  }
 }
 
 /* Laptops and Desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
+  .grid {
+    font-size: 1.3em;
+  }
+
 }
 
-/* Large Desktops */
-@media (min-width: 1200px) {
-}
