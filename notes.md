@@ -69,5 +69,3 @@ Moving Reducer function to own file
 /_ Large Desktops _/
 @media (min-width: 1200px) {
 }
-
-//TODO - contracted words in word selection should not be seperate.

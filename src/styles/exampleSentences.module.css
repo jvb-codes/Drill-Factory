@@ -126,6 +126,7 @@ p {
   }
   .copied-success {
     font-size: 1.3em;
+    top: 30%;
   }
 }
 
@@ -133,6 +134,9 @@ p {
 @media (min-width: 992px) {
   .grid, .copied-success, .loader {
     font-size: 1.3em;
+  }
+  .copied-success {
+     top: 30%;
   }
 
 }
