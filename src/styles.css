@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Wix Madefor Display", sans-serif;
+ 
 }
 
 /* Icon from Google material icons */
@@ -16,17 +17,4 @@
   position: absolute;
 }
 
-/* Tablets */
-@media (min-width: 576px) and (max-width: 991px) {
-  .material-symbols-outlined{
-    font-variation-settings:  "opsz" 48;
-  }
-}
-
-/* Laptops and Desktops */
-@media (min-width: 992px) {
-   .material-symbols-outlined{
-    
-  }
-}
 

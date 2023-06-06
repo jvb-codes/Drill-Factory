@@ -26,6 +26,10 @@
   visibility: visible;
 }
 
+.icon:hover{
+  cursor: pointer;
+}
+
 /*MEDIA QUERIES*/
 
 /* Tablets */

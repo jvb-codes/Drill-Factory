@@ -70,8 +70,4 @@ Moving Reducer function to own file
 @media (min-width: 1200px) {
 }
 
-//TODO - disable hover on headers in words to replace and word selection
-
 //TODO - contracted words in word selection should not be seperate.
-
-//TODO - add hover on hamburger menu.

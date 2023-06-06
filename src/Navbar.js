@@ -8,7 +8,11 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
       {isMenuOpen ? (
         ""
       ) : (
-        <GiHamburgerMenu size="25px" onClick={() => setIsMenuOpen(true)} />
+        <GiHamburgerMenu
+          className={styles.icon}
+          size="25px"
+          onClick={() => setIsMenuOpen(true)}
+        />
       )}
     </nav>
   );

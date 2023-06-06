@@ -21,6 +21,7 @@
 .header p {
   font-size: 1.1em;
   text-align: center;
+  cursor: default;
 }
 
 /*WORDS DISPLAY*/
@@ -47,6 +48,8 @@
 
 .empty-notification {
   background-color: transparent !important;
+  cursor: default !important;
+  
 }
 
 /*ERROR MESSAGE*/
