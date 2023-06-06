@@ -39,7 +39,7 @@ export default function UserInput() {
 
   return (
     <>
-      <div className="winWidth">{winWidth}</div>
+      {/* <div className="winWidth">{winWidth}</div> */}
       <section className={styles.grid}>
         <p
           className={`${styles["error-message"]} ${
