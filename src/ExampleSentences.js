@@ -22,8 +22,6 @@ export default function ExampleSentences() {
     setSelectedSentences(filteredExampleSentences);
   }, [state.exampleSentences]);
 
-  console.log(state.exampleSentences, selectedSentences);
-
   //Changes background of sentence if selected
   function handleBackgroundColor(id) {
     const updated = state.exampleSentences.map((item) => {
