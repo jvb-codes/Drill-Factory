@@ -7,7 +7,7 @@ export const initialState = {
   isWordSelectionConfirmed: false,
   showInputBox: true,
   showHighlightWords: false,
-  showExampleSentences: false
+  showExampleSentences: false,
 };
 export const reducer = (state, action) => {
   switch (action.type) {
@@ -29,6 +29,10 @@ export const reducer = (state, action) => {
       return { ...state, showExampleSentences: true };
     case "HIDE_EXAMPLE_SENTENCES":
       return { ...state, hideExampleSentences: false };
+    case "SHOW_NAV_MENU":
+      return { ...state, isMenuOpen: true };
+    case "HIDE_NAV_MENU":
+      return { ...state, isMenuOpen: false };
     default:
       return state;
   }

@@ -2,18 +2,33 @@
 
 .grid {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0.5em 1.5em 0.5em 1.5em;
   background: rgb(59, 58, 65);
-  color: white;
+  color: whitesmoke;
+  height: 75px;
+ 
 }
-
 /* TITLE */
 
-.grid :nth-child(1){
+.logo{
   font-size: 2em;
   font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* LINKS */
+
+.grid nav{
+  display: flex;
+  gap: 2em;
+  margin-left: 20%;
+}
+
+.grid nav a{
+  padding: 0.75em 1em 0.75em 1em;
+  border-radius: 3px;
+ 
 }
 
 /* HAMBURGER MENU */
@@ -26,16 +41,30 @@
   visibility: visible;
 }
 
+.icon{
+  margin-left: auto;
+}
+
 .icon:hover{
   cursor: pointer;
 }
 
 /*MEDIA QUERIES*/
 
+/* Smartphones */
+@media (min-width: 0px) and (max-width: 575px) {
+  .grid nav {
+    display: none;
+  }
+}
+
 /* Tablets */
 @media (min-width: 576px) and (max-width: 991px) {
   .grid {
     font-size: 1.3em;
+  }
+  .icon{
+    display: none;
   }
 }
 
@@ -43,6 +72,9 @@
 @media (min-width: 992px) {
   .grid {
     font-size: 1.3em;
+  }
+  .icon{
+    display: none;
   }
 
 }

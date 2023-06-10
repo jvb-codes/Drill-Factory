@@ -1,14 +1,17 @@
 import styles from "./styles/overlay.module.css";
+import { useContext } from "react";
+import { AppContext } from "./App";
 
-export default function MenuOverlay({ isMenuOpen, setIsMenuOpen }) {
+export default function MenuOverlay() {
+  const { state, dispatch } = useContext(AppContext);
   return (
     <section
       className={`${styles.grid} ${
-        isMenuOpen ? styles["menu-visible"] : styles["menu-hidden"]
+        state.isMenuOpen ? styles["menu-visible"] : styles["menu-hidden"]
       }`}
     >
       <div
-        onClick={() => setIsMenuOpen(false)}
+        onClick={() => dispatch({ type: "HIDE_NAV_MENU" })}
         className={`material-symbols-outlined ${styles["menu-close"]}`}
       >
         close

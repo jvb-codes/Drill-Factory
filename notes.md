@@ -1,3 +1,6 @@
+//TODO -
+Find out why p tags get a pointer on hover by default.
+
 Error Msg in UserInput comp
 
 - Change the isFetched state name to "isInputOk, setIsInputOk".

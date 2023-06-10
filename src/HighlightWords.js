@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import styles from "./styles/highlightwords.module.css"
+
 import WordsToReplace from "./WordsToReplace";
 import WordSelection from "./WordSelection";
 
@@ -9,7 +11,7 @@ export default function HighlightWords({ setIsWordSelectionOk }) {
   const [selectedWordsErrorMsg, setSelectedWordsErrorMsg] = useState(false);
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <WordSelection
         wordSelection={wordSelection}
         setWordSelection={setWordSelection}
@@ -24,6 +26,6 @@ export default function HighlightWords({ setIsWordSelectionOk }) {
         selectedWords={selectedWords}
         setIsWordSelectionOk={setIsWordSelectionOk}
       />
-    </>
+    </div>
   );
 }

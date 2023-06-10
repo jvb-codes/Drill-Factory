@@ -1,7 +1,7 @@
 /*WRAPPER*/
 
 .grid {
-  align-self: end;
+  align-self: center;
   justify-self: center;
   box-shadow: 0 0 3px rgba(235, 205, 205, 0.7);
   display: flex;

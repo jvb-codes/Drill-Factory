@@ -1,19 +1,27 @@
-import styles from "./styles/navbar.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { NavLink } from "react-router-dom";
+import styles from "./styles/navbar.module.css";
+import { useContext } from "react";
+import { AppContext } from "./App";
 
-export default function Navbar({ isMenuOpen, setIsMenuOpen }) {
+export default function Navbar() {
+  const { state, dispatch } = useContext(AppContext);
   return (
-    <nav className={styles.grid}>
-      <div>aita</div>
-      {isMenuOpen ? (
+    <>
+      <div className={styles.logo}>aita</div>
+      <nav>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/drill-maker">Drill Maker</NavLink>
+      </nav>
+      {state.isMenuOpen ? (
         ""
       ) : (
         <GiHamburgerMenu
           className={styles.icon}
           size="25px"
-          onClick={() => setIsMenuOpen(true)}
+          onClick={() => dispatch({ type: "SHOW_NAV_MENU" })}
         />
       )}
-    </nav>
+    </>
   );
 }

@@ -1,8 +1,11 @@
 /* WRAPPER */
 
-.grid {
-  align-self: center;
-  justify-self: center;
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   box-shadow: 0 0 3px rgba(235, 205, 205, 0.7);
