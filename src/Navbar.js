@@ -1,17 +1,24 @@
 import { GiHamburgerMenu } from "react-icons/gi";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import styles from "./styles/navbar.module.css";
 import { useContext } from "react";
 import { AppContext } from "./App";
 
 export default function Navbar() {
   const { state, dispatch } = useContext(AppContext);
+
+  const location = useLocation();
+ 
+  const handleStyles = (path) => {
+    return location.pathname === path ? "active-nav-link" : ""
+  }
+
   return (
     <>
       <div className={styles.logo}>aita</div>
       <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="drill-maker">Drill Maker</NavLink>
+        <NavLink className={handleStyles("/")} to="/">Home</NavLink>
+        <NavLink className={handleStyles("/drill-maker")} to="drill-maker">Drill Maker</NavLink>
       </nav>
       {state.isMenuOpen ? (
         ""

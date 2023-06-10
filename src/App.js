@@ -1,5 +1,5 @@
 //HOOKS
-import React, { useReducer, createContext } from "react";
+import React, { useReducer, createContext, useEffect, useState } from "react";
 import { RouterProvider } from "react-router-dom";
 
 //COMPONENTS
