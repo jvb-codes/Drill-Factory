@@ -17,7 +17,7 @@ export default function Navbar() {
     <>
       <div className={styles.logo}>aita</div>
       <nav>
-        <NavLink className={handleStyles("/aita")} to="/aita">Home</NavLink>
+        <NavLink className={handleStyles("/aita/")} to="/aita/">Home</NavLink>
         <NavLink className={handleStyles("/aita/drill-maker")} to="drill-maker">Drill Maker</NavLink>
       </nav>
       {state.isMenuOpen ? (
