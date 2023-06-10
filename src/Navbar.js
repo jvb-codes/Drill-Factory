@@ -10,8 +10,8 @@ export default function Navbar() {
     <>
       <div className={styles.logo}>aita</div>
       <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/drill-maker">Drill Maker</NavLink>
+        <NavLink to="/aita">Home</NavLink>
+        <NavLink to="drill-maker">Drill Maker</NavLink>
       </nav>
       {state.isMenuOpen ? (
         ""
