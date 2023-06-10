@@ -55,7 +55,6 @@ export default function ExampleSentences() {
   function handleGoToPreviousScreen() {
     dispatch({ type: "SHOW_HIGHLIGHT_WORDS" });
     dispatch({ type: "HIDE_EXAMPLE_SENTENCES" });
-
     dispatch({ type: "EXAMPLE_SENTENCES", payload: [] });
   }
   const loader = (
@@ -78,7 +77,7 @@ export default function ExampleSentences() {
   ));
 
   return (
-    <>
+    <div className={styles.wrapper}>
       <div
         className={`${styles["copied-success"]} ${
           isCopiedMsg ? styles.visible : styles.hidden
@@ -86,7 +85,7 @@ export default function ExampleSentences() {
       >
         Text copied
       </div>
-      <section className={styles["grid"]}>
+      <section className={styles.container}>
         <div className={styles["icon-container"]}>
           <i
             onClick={handleGoToPreviousScreen}
@@ -106,6 +105,6 @@ export default function ExampleSentences() {
         </div>
         {state.exampleSentences.length === 0 ? loader : displayExamples}
       </section>
-    </>
+    </div>
   );
 }

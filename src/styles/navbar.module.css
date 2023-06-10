@@ -25,6 +25,12 @@
   margin-left: 20%;
 }
 
+.grid nav a{
+  padding: 0.75em 1em 0.75em 1em;
+  border-radius: 3px;
+ 
+}
+
 /* HAMBURGER MENU */
 
 .menu-hidden {
