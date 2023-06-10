@@ -15,9 +15,9 @@ import ErrorPage from "../ErrorPage";
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-    <Route path="/aita" element={<Layout />} errorElement={<ErrorPage />}>
+    <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
       <Route index element={<Homepage />} />
-      <Route path="drill-maker" element={<DrillMaker />} />
+      <Route path="/drill-maker" element={<DrillMaker />} />
     </Route>
     </>
   )
