@@ -1,5 +1,5 @@
 //HOOKS
-import React, { useReducer, createContext, useEffect, useState } from "react";
+import React, { useReducer, createContext } from "react";
 import { RouterProvider } from "react-router-dom";
 
 //COMPONENTS
@@ -7,14 +7,14 @@ import { RouterProvider } from "react-router-dom";
 import MenuOverlay from "./MenuOverlay";
 
 //ROUTES
-import { router } from "./routes/router";
+import { router } from "../routes/router";
 
 //STYLES
-import "./styles.css";
-import styles from "./styles/app.module.css";
+import "../styles/styles.css";
+import styles from "../styles/app.module.css";
 
 //FUNCTIONS
-import { reducer, initialState } from "./reducerFunction";
+import { reducer, initialState } from "../functions/reducerFunction";
 
 //USE_CONTEXT
 

@@ -89,7 +89,7 @@ p {
 
 .copied-success {
   position: fixed;
-  top: 35%;
+  top: 30%;
   left: 0;
   right: 0;
   margin: auto;
@@ -124,22 +124,22 @@ p {
 
 /* Tablets */
 @media (min-width: 576px) and (max-width: 991px) {
-  .grid {
+  .wrapper {
     font-size: 1.3em;
   }
   .copied-success {
     font-size: 1.3em;
-    top: 30%;
+    top: 25%;
   }
 }
 
 /* Laptops and Desktops */
 @media (min-width: 992px) {
-  .grid, .copied-success, .loader {
+  .wrapper, .copied-success, .loader {
     font-size: 1.3em;
   }
   .copied-success {
-     top: 30%;
+     top: 25%;
   }
 
 }
